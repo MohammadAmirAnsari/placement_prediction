@@ -5,7 +5,6 @@ import joblib
 import warnings
 warnings.filterwarnings("ignore", category=UserWarning)
 
-
 # Get input from command line
 # iq = 7
 # cgpa = 100
@@ -17,7 +16,7 @@ model = joblib.load('model.pkl')
 scaler = joblib.load('scaler.pkl')
 
 # Prepare input and scale it
-real_input = np.array([[iq, cgpa]])
+real_input = np.array([[cgpa, iq]])
 
 scaled_input = scaler.transform(real_input)
 

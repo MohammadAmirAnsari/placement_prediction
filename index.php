@@ -66,11 +66,10 @@
     <div class="container">
         <h2>Predict Placement</h2>
         <form action="predict.php" method="post">
-            <label for="iq">IQ (0-9):</label>
-            <input type="number" name="iq" min="0" max="9" required>
-
-            <label for="cgpa">CGPA (0-250):</label>
-            <input type="number" name="cgpa" min="0" max="250" required>
+            <label for="cgpa">CGPA (0-9):</label>
+            <input type="number" name="cgpa" min="0" max="9" step="0.01" required>
+            <label for="iq">IQ (0-250):</label>
+            <input type="number" name="iq" min="0" max="250" required>
 
             <input type="submit" value="Predict">
         </form>

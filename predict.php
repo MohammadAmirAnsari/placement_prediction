@@ -65,8 +65,8 @@ $output = shell_exec($command);
 <body>
     <div class="card">
         <h2>🎓 Placement Prediction</h2>
-        <p><strong>IQ:</strong> <?php echo htmlspecialchars($iq); ?></p>
         <p><strong>CGPA:</strong> <?php echo htmlspecialchars($cgpa); ?></p>
+        <p><strong>IQ:</strong> <?php echo htmlspecialchars($iq); ?></p>
         <p class="result"><strong>Prediction:</strong> <?php echo trim($output); ?></p>
         <a href="index.php">🔙 Go Back</a>
     </div>
