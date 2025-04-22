@@ -3,7 +3,7 @@
 $iq = $_POST['iq'];
 $cgpa = $_POST['cgpa'];
 
-$command = escapeshellcmd("/home/slg00272/Downloads/test/placement_model/placement_predictor/bin/python predict.py $iq $cgpa");
+$command = escapeshellcmd("python3 predict2.py $iq $cgpa");
 $output = shell_exec($command);
 
 ?>
